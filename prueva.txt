@@ -1,0 +1,14 @@
+Lo que hemos hecho para crear este archivo (Contenido añadido desde la web github)
+
+
+mkdir ejemplo && cd ejemplo   //Creamos carpeta y cambiamos a esa carpeta
+touch prueva.txt              //creamos un archivo de texto vacío
+git init                      //Inicializamos un GIT en esa carpeta
+git status                    //Vemos que hay el fichero prueva.txt pero en naranja, lo que significa que no se está haciendo control de versiones
+git add prueva.txt            //Añadimos este fichero al control de versiones
+git status                    //Aparece en verde, significa que no está añadido al repositorio
+git remote add origin https://github.com/EloiVilalta/Ejemplo_1.1.git  //Creamos el repositorio en GITHUB desde el terminal
+git push -u origin master     //Subimos el fichero prueba.txt al repo remoto (GITHUB), usando -u la primera vez
+
+
+Vemos como en la web aparece el fichero
