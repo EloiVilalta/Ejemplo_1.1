@@ -1,0 +1,15 @@
+Pasos realizados para crear este segundo archivo (contenido añadido desde la web Github)
+
+mkdir Cloneejemplos &&cd Cloneejemplos    //Creamos segunda carpeta para trabajar como si fuera otra maquina
+git clone https://github.com/EloiVilalta/Ejemplo_1.1.git   //Clonamos el repositorio original en esta otra carpeta
+cd Ejemplo_1.1/       //nos vamos a la carpeta del repositorio descargado     
+git status            //Vemos que no hay ningun cambio pendiente de añadir o de hacer commit
+ls                    //Vemos que hay el archivo prueva.txt del original
+touch prueva2ndoTerminal.txt        //Creamos un segundo fichero
+git status                         //Vemos que hay que añadir este fichero
+git add prueva2ndoTerminal.txt        //Lo añadimos
+git status                         //Vemos que tenemos archivos pendientes de commit
+git commit -m "Este es un segundo fichero creado por 2ndo terminal"      //Hacemos el commit en mi base de datos local
+git push origin master            //Subimos al repo remoto (GITHUB), ojo que no he usado -u esta vez, y lo suvimos del LOCAL al REMOTO
+
+Vemos como en la web aparecen los dos ficheros
